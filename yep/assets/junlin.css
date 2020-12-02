@@ -1,0 +1,209 @@
+body
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.profile
+{
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+
+     transition: transform .2s; /* Animation */
+}
+.profile:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+h1
+{
+    padding-left: 15px;
+    font-family: 微軟正黑體;
+    font-size: 40px;
+}
+.vrline
+{
+    width: 50px;
+    height: 650px;
+}
+.title
+{
+    float: right;
+    padding-right: 30%;
+}
+.icon
+{
+    width: 150px;
+    height: 150px;
+    transition: transform .2s; /* Animation */
+}
+.icon:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 80%; background-color: black;}
+.css {width: 70%; background-color: black;}
+.js {width: 65%; background-color: black;}
+.php {width: 60%; background-color: black;}
+.skillbar
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+hr
+{
+    color: black;
+    width: 90%;
+}
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 30px;
+    font-family: DFKai-sb;
+    font-weight: bolder;
+}
+
+.active,
+.accordion:hover {
+    background-color: silver;
+}
+
+.panel {
+    padding: 0 35px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 25px;
+    font-family: 微軟正黑體;
+}
+
+/* 技能動畫 */
+
+ul , li {
+    text-align: left;
+    width: 1110px;
+}
+
+
+li {
+    list-style: none;
+    color: #d2dae2;
+    font-size:50px;
+    margin: 48px 30px;
+    position: relative;
+}
+
+li::before , li::after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 100%;
+    background-color: #1f4a59;
+    position: absolute;
+    bottom: -28px;
+    border-radius: 6px;
+}
+
+li::before {
+    box-shadow: 0 0 6px rgba(75,207,250,0.2);
+}
+
+li::after {
+    background-image: linear-gradient(90deg, #0fbcf9 , #34e7e4);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+li::after {
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+.html::after {
+    animation-name: html;
+}
+.css::after {
+    animation-name: css;
+}
+.js::after {
+    animation-name: js;
+}
+.php::after {
+    animation-name: php;
+}
+
+
+
+@keyframes html{
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes css{
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes js{
+    from {
+        width: 0;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes php{
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+
+/* 技能動畫 結束 */
+
+.introduction {
+    text-align:center;
+}
+
+.skillbar h2 {
+    font-size: 30px;
+}
+

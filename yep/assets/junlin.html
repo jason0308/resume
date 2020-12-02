@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        @import url("junlin.css");
+    </style>
+</head>
+
+<body background=".//RainbowDesktopBackground.png"">
+    <div style="border: black dashed;  border-radius: 6px;">
+        <div class="introduction">
+            <img class="profile" src="1549983667206.jpg">
+            <img class="vrline" src="line.png">
+                <p style="font-size: 40px;font-family: 微軟正黑體;font-weight: bolder;">
+                    -----------------不能低頭，皇冠會掉。------------------</p>
+                <h1 style="font-size: 200px;">葉俊麟</h1>
+                <div class="info">
+                    <h1>10844127</h1>
+                    <h1>中原大學 資訊管理系</h1>
+                    <h1>Hometown:Maioli</h1>
+                    <h1>連絡電話:0912329452</h1>
+                </div>
+                <a href="mailto:yejunling@gmail.com">
+                    <img class="icon" src="email.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=100004011057316">
+                    <img class="icon" src=".//b763699fd1fa3bfb374442593ae642e1.png"></a>
+                <a href="https://www.instagram.com/j.ason___yeh/" target="_blank">
+                    <img class="icon" src="ig.ico"></a>
+            </div>
+        </div>-
+        <hr>
+        <div class="skillbar">
+            <h2 style="font-family: 'Courier New', Courier, monospace;font-size: 100px; margin: auto;"><u>My Skills</u></h2>
+            <div class="container">
+                <main>                    
+                    <li class="html">HTML</li>
+                    <li class="css">CSS</li>
+                    <li class="js">JS</li>
+                    <li class="php">PHP</li>
+                </ul></main>
+
+
+
+            </div>
+        </div>
+
+
+        <hr>
+        <h2 style="font-family: 'Courier New', Courier, monospace;font-size:100px; margin: auto; text-align: center;"><u>課程專案</u></h2>
+        <div style="padding-left: 35px;padding-right: 35px;">
+            <button class="accordion">大一上</button>
+            <div class="panel">
+                <p style="font-size: 30px;"><u>企業概論:<br>我們是中原大學資管系的學生，由吳肇銘老師的企業概論與黑孩子咖啡合作，除了能培養我們經營一家企業所具備的能力之外，也能同時參與公益性質的活動幫助更多需要被幫助的人。
+                    透過販售黑孩子咖啡生產的濾掛式咖啡，將所得全數捐回，以實現做公益的目標。
+                  </u></p>
+                <img src="S__56049672.jpg" style="width: 800px;height: auto;">
+                <img>
+            </div>
+
+            <button class="accordion">大一下</button>
+            <div class="panel">
+                <p style="font-size: 30px;"><u>管理學:<br> 拍攝宣傳影片，以打造形象廣告的模式，不只介紹桃姊妹的環境，也採訪單親爸爸，說出內心真實的感受，幫助桃姊妹格子舖宣傳新服務據點，增加需要幫助的單親家庭獲取更多收入的機會，讓更多人知道桃姊妹格子鋪的存在及意義。</u></p>
+                <img src="x.jpg" style="width: 800px;height: auto;">
+            </div>
+
+            <button class="accordion">大二上</button>
+            <div class="panel">
+                <p style="font-size: 30px;">多媒體期中專案:<br>第一次修學習做網頁的課程，與三位同學齊心協力，做出一個介紹資管系的網頁。</p>
+                <img src="mid.jpg" style="width: 800px;height: auto;">
+            </div>
+        </div>
+        <hr>
+        <h2 style="font-family: 'Courier New', Courier, monospace;font-size: 100px;  margin: auto;text-align: center;"><u>社團經歷</u></h2>
+        <h2 style="font-size: 70px;text-align: center;text-align: center;">club experience</h2>;"
+        <img src=".//351839.jpg" style="width: 800px;height: auto;display: inline;">
+        <h2 style ="font-size: 40px;font-weight: bolder;text-align: center; ">HHDC嘻研社RAP組教學:深愛嘻哈音樂的我，在大學有機會深入這個文化，結交共同興趣的好友，努力的在舞台上發光發熱。</h2>
+        <h2 style="font-family: 'Courier New', Courier, monospace;font-size: 100px;  margin: auto;text-align: center;"><u>工作經驗</u></h2>   
+        <img src=".//images.png" style="width: 800px;height: auto;text-align: center;">
+        <h2 style ="font-size: 40px;font-weight: bolder;text-align: center; ">擔任餐廳服務生。</h2>
+        <img src=".//unnamed.jpg" style="width: 800px;height: auto;text-align: center;">
+        <h2 style ="font-size: 40px;font-weight: bolder;text-align: center; ">擔任補習班助導。</h2>
+        <img src=".//下載.png" style="width: 800px;height: auto;text-align: center;">
+        <h2 style ="font-size: 40px;font-weight: bolder;text-align: center; ">擔任手搖飲料店店員。</h2>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
